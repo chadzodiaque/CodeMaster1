@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/IMG-20220107-WA0019.jpg</file>
+        <file>Images/IMG-20220107-WA0020.jpg</file>
+        <file>Images/IMG-20220107-WA0021.jpg</file>
+        <file>Images/IMG-20220107-WA0022.jpg</file>
+        <file>Images/logo.png</file>
+        <file>Images/Sans titre.png</file>
+        <file>Images/background2.png</file>
+        <file>Images/background.png</file>
+        <file>Images/icons8-utilisateur-50.png</file>
+        <file>Images/invitation.png</file>
+        <file>Images/splashscreen.png</file>
+    </qresource>
+</RCC>

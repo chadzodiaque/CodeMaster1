@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Messagerie</class>
+ <widget class="QDialog" name="Messagerie">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>809</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>809</width>
+    <height>640</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>809</width>
+    <height>640</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Message - MyChat</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*
+{
+	font-family :  century-gothic;
+	font-size : 18px;
+	color : black;
+}
+
+QDialog
+{
+	background : white;
+}
+
+QPushButton
+{
+	border : 1px solid blue;
+	border-radius : 15px;
+}
+QToolButton
+{
+	border : none;
+}
+
+QPushButton:hover
+{
+	background : blue;
+	color : white;
+	border-radius : 15px;
+}
+
+QPlainTextEdit
+{
+	border : 1px solid blue;
+}
+
+QScrollArea
+{
+	background : white;
+
+}
+
+QFrame#invitation
+{
+	border : none;
+}
+
+QFrame#contenu
+{
+	background : white;
+}
+
+QTextEdit#message
+{
+	border : 1px solid blue;
+}
+
+QFrame#contenu1
+{
+	border : none;
+}
+
+QScrollArea
+{
+	border : 1px solid blue;
+}
+QFrame#frame
+{
+	border : 1px solid blue;
+}</string>
+  </property>
+  <widget class="QFrame" name="contenu">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>791</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>791</width>
+     <height>621</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="contenu1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>421</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="envoyer">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>550</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Envoyer</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>550</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Actualiser</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="message">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>500</y>
+       <width>421</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="contenu_messages">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>110</y>
+       <width>421</width>
+       <height>381</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>421</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QToolButton" name="toolButton">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/Images/icons8-utilisateur-50.png</normaloff>:/Images/icons8-utilisateur-50.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>20</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <zorder>envoyer</zorder>
+    <zorder>label_2</zorder>
+    <zorder>message</zorder>
+    <zorder>contenu_messages</zorder>
+    <zorder>frame</zorder>
+    <zorder>pushButton_2</zorder>
+   </widget>
+   <widget class="QFrame" name="invitation">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>60</y>
+      <width>341</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>108</x>
+       <y>10</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Liste d'amis</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>60</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Choisir</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>110</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Envoyé une invitation</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>120</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Deconnexion</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QToolButton" name="toolButton_2">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>570</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+    <property name="icon">
+     <iconset resource="ressources.qrc">
+      <normaloff>:/Images/logo.png</normaloff>:/Images/logo.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
