@@ -1,1 +1,14 @@
+L'application développée en c++ avec interface graphique QT est une simple application de messagerie permettant à plusieurs personnes de pouvoir communique entre eux. Nous n'avons pas gérer la partie réseau, c'est à dire d'importer la base de donnée sur un serveur. Coté design c'est pas fameux 
 
+
+Pour exécuter l'application, il faut : 
+
+- importer le projet dans Qt Cretor en double-cliquant sur "Projet.pro" 
+
+- executer le projet en selectionnant le compilateur MinGW 32 bit
+
+- Lors de la compilation du projet, la base de donnée est créé dans le fichier Build et ne contient aucune information. On doit inscrire de nouveau utilisateurs dans l'application pour pouvoir faire des tests de connexion et autres fonctionnalités.
+  (Vous pouvez aussi remplacer le fichier de base de donnée SQLITE (Mychat.db) contenu dans le dossier Build créé après une première compilation par celle contenu dans le dossier "Projet_QT_Achhad_Malikath"
+	pour pouvoir faire des tests avec les informations contenus
+
+Quelques informtion de connexion contenus dans la base de donnée importée :
