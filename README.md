@@ -1,2 +1,1 @@
-# CodeMaster1
-Contient tout les codes que j'ai pu écrit sur différents languages
+Mise en place d'une messagerie simple avec QT
